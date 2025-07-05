@@ -1377,6 +1377,15 @@ body {
 .swiper-pagination-bullet-active {
     background: var(--primary-color);
 }
+.btn-testi-ig {
+    background: var(--primary-color);
+    color: var(--dark-color);
+    font-size: var(--small-font-size);
+    font-weight: var(--font-semi-bold);
+    margin-top: 15px;
+    padding: 5px 10px;
+    transition: .3s;
+}
 
 /* Contact */
 .contact-container {
@@ -1663,6 +1672,10 @@ body {
     }
     .swiper-slide .client-details {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-self: center
     }
     .contact-container {
         flex-direction: column;
