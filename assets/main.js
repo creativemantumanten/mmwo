@@ -341,7 +341,7 @@ ScrollReveal().reveal('.avatar-img', { delay: 50, origin: 'top' });
 ScrollReveal().reveal('.avatar-info, .section-title', { delay: 100, origin: 'top' });
 ScrollReveal().reveal('.home-social, .home-scroll-btn, .copy-right', { delay: 400, origin: 'bottom' });
 ScrollReveal().reveal('.about-img', { delay: 500, origin: 'top' });
-ScrollReveal().reveal('.about-info, .sue-footer .sue-logo', { delay: 100, origin: 'bottom' });
+ScrollReveal().reveal('.about-info, .sue-footer .sue-logo, .spotify-btn', { delay: 100, origin: 'bottom' });
 ScrollReveal().reveal('.pro-card, .about-buttons .sue-main-btn, .portfolio-tabs .tab-btn', { delay: 300, origin: 'right', interval: 50 });
 ScrollReveal().reveal('.service-card, .portfolio-card, .contact-item, .contact-social-links li, .footer-menu .menu-item', { delay: 100, origin: 'bottom', interval: 100 });
 ScrollReveal().reveal('.sue-client-swiper, .contact-form-body', { delay: 500, origin: 'right' });
