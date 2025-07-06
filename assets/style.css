@@ -666,6 +666,63 @@ body {
     font-size: var(--h1-font-size);
     font-weight: var(--font-bold);
 }
+.avatar-info .what-i-do span {
+    position: relative;
+}
+.avatar-info .what-i-do span::before {
+    content: "Organizer";
+    animation: words 20s infinite;
+    -webkit-animation: words 20s infinite;
+}
+/* .avatar-info .what-i-do span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 25px;
+    background-color: var(--body-color);
+    border-left: 2px solid var(--primary-color);
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+    -webkit-animation: cursor .8s infinite, typing 20s steps(14) infinite;
+} */
+/* .avatar-info .what-i-do span::after {
+    content: "";
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 25px;
+    background-color: var(--body-color);
+    border-left: 2px solid var(--primary-color);
+    right: -8px;
+    animation: cursor .8s infinite, typing 20s steps(14) infinite;
+    -webkit-animation: cursor .8s infinite, typing 20s steps(14) infinite;
+} */
+/* @keyframes cursor {
+    to {
+        border-left: 2px solid var(--body-color);
+    }
+} */
+@keyframes words {
+    0%,20% {
+        content: "Planner";
+    }
+    21%,40% {
+        content: "Consultant";
+    }
+    41%,60% {
+        content: "Pioneer";
+    }
+    61%,80% {
+        content: "Friends";
+    }
+}
+/* @keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95% {
+        width: 0;
+    }
+    5%,20%,25%,40%,45%,60%,65%,80%,85% {
+        width: calc(100% + 8px);
+    }
+} */
 .avatar-info .what-i-do {
     font-size: var(--base-font-size);
     font-weight: var(--font-semi-bold);
