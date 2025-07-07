@@ -374,6 +374,12 @@ body {
     transition: .3s;
     display: none;
 }
+.login-icon {
+    color: var(--color-01);
+    font-size: 1.8rem;
+    cursor: pointer;
+    transition: .3s;
+}
 .lets-talk-icon:hover {
     color: var(--hover-color);
 }
