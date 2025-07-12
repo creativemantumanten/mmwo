@@ -95,13 +95,13 @@
     .contact-social-links li {
         box-shadow: 0 2px 4px hsl(0, 0%, 1%, .1);
     }
-    .sue-footer .copy-right {
+    .mantu-manten-footer .copy-right {
         color: hsl(var(--hue) 26% 30%);
     }
-    .sue-footer .copy-right a {
+    .mantu-manten-footer .copy-right a {
         color: hsl(var(--hue) 26% 30%);
     }
-    .sue-footer .copy-right a:hover {
+    .mantu-manten-footer .copy-right a:hover {
         color: hsl(var(--hue) 0% 0%);
     }
     .to-top-btn {
@@ -139,20 +139,20 @@ body {
 }
 
 /*--------Reusable Styles--------*/
-.sue-section {
+.mantu-manten-section {
     position: relative;
     overflow: hidden;
 }
-.sue-container {
+.mantu-manten-container {
     max-width: 1170px;
     margin-left: auto;
     margin-right: auto ;
 }
-.sue-sub-container {
+.mantu-manten-sub-container {
     padding-top: 7em;
     padding-bottom: 5em;
 }
-.sue-wrapper {
+.mantu-manten-wrapper {
     position: relative;
     width: 100%;
     height: 100%;
@@ -284,25 +284,25 @@ body {
     opacity: .5;
 }
 /*Buttons*/
-.sue-main-btn {
+.mantu-manten-main-btn {
     width: fit-content;
     padding: 14px 30px;
     border-radius: 35px;
     cursor: pointer;
     transition: .3s;
 }
-.sue-main-btn:hover {
+.mantu-manten-main-btn:hover {
     color: var(--white-color);
     background: var(--hover-color);
     border: 2px solid var(--hover-color);
 }
-.sue-main-btn a {
+.mantu-manten-main-btn a {
     color: var(--color-01);
     font-size: var(--small-font-size);
     font-weight: 500;
     transition: .3s;
 }
-.sue-main-btn:hover a {
+.mantu-manten-main-btn:hover a {
     color: var(--white-color);
 }
 .border-btn {
@@ -316,7 +316,7 @@ body {
     color: var(--dark-color);
 }
 /*Header*/
-.sue-header {
+.mantu-manten-header {
     z-index: var(--z-fixed);
     position: fixed;
     width: 100%;
@@ -325,32 +325,32 @@ body {
     padding: 30px 0;
     transition: .3s ease;
 }
-.sue-header.shrink {
+.mantu-manten-header.shrink {
     /* background: var(--body-color); */
     background: var(--bottom-nav-bg);
     backdrop-filter: blur(10px);
     padding: 12px 0;
 }
-.sue-header .inner {
+.mantu-manten-header .inner {
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.sue-header .sue-logo {
+.mantu-manten-header .mantu-manten-logo {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.sue-logo a {
+.mantu-manten-logo a {
     color: var(--color-01);
     font-size: 2rem;
     font-weight: var(--font-semi-bold);
     letter-spacing: -2px;
     transition: .3s;
 }
-.sue-logo img {
+.mantu-manten-logo img {
     width: 120px;
     margin-right: 10px;
     display: flex;
@@ -358,7 +358,7 @@ body {
     align-items: center;
 }
 
-.sue-logo a:hover {
+.mantu-manten-logo a:hover {
     color: var(--hover-color);
 }
 .header-btns {
@@ -597,7 +597,7 @@ body {
 .home-container {
     height: 100vh;
 }
-.home-container .sue-wrapper {
+.home-container .mantu-manten-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1606,12 +1606,12 @@ body {
 }
 
 /* Footer */
-.sue-footer {
+.mantu-manten-footer {
     background: var(--footer-bg);
     padding-top: 100px;
     padding-bottom: 165px;
 }
-.sue-footer .sue-container .inner {
+.mantu-manten-footer .mantu-manten-container .inner {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1639,18 +1639,17 @@ body {
     color: var(--color-03);
     background: var(--color-01);
 }
-.sue-footer .copy-right {
+.mantu-manten-footer .copy-right {
     color: var(--color-04);
     font-size: var(--small-font-size);
     margin-top: 10px;
 }
-.sue-footer .copy-right a:hover {
+.mantu-manten-footer .copy-right a:hover {
     color: var(--color-01);
     transition: .3s;
 }
-.sue-footer .sue-logo img {
-    width: 150px;
-    
+.mantu-manten-footer .mantu-manten-logo img {
+    width: 150px;   
 }
 
 /* Media Queries Max Width 1600px */
@@ -1658,7 +1657,7 @@ body {
     .cursor {
         display: none;
     }
-    .sue-container {
+    .mantu-manten-container {
         max-width: 1075px;
     }
     .avatar-img {
@@ -1668,7 +1667,7 @@ body {
 }
 /* Media Queries Max Width 1200px */
 @media screen and (max-width: 1200px) {
-    .sue-container {
+    .mantu-manten-container {
         max-width: 100%;
         margin-left: 50px;
         margin-right: 50px;
@@ -1771,14 +1770,14 @@ body {
         --small-font-size: .93rem;
         --tiny-font-size: .88rem;
     }
-    .sue-container {
+    .mantu-manten-container {
         margin-left: 25px;
         margin-right: 25px;
     }
-    .sue-logo a {
+    .mantu-manten-logo a {
         font-size: 2.35rem;
     }
-    .sue-logo img {
+    .mantu-manten-logo img {
         width: 90px;
     }
     .lets-talk-btn {
@@ -1858,20 +1857,20 @@ body {
         --small-font-size: .9rem;
         --tiny-font-size: .85rem;
     }
-    .sue-container {
+    .mantu-manten-container {
         margin-left: 20px;
         margin-right: 20px;
     }
-    .sue-header {
+    .mantu-manten-header {
         padding: 20px 0;
     }
-    .sue-logo img {
+    .mantu-manten-logo img {
         width: 80px;
     }
     .header-btns {
         column-gap: 15px;
     }
-    .home-container .sue-wrapper {
+    .home-container .mantu-manten-wrapper {
         flex-direction: column-reverse;
     }
     .home-social {

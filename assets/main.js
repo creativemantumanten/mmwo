@@ -128,7 +128,7 @@ portfolioCardWithModals.forEach((portfolioCardWithModal) => {
 });
 
 // Swiper
-var swiper = new Swiper(".sue-client-swiper", {
+var swiper = new Swiper(".mantu-manten-client-swiper", {
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
@@ -150,33 +150,33 @@ var swiper = new Swiper(".sue-client-swiper", {
     });
 })();
 
-sueContactForm = document.getElementById("sue-contact-form");
-sueContactFormAlert = document.querySelector(".contact-form-alert");
+mantumantenContactForm = document.getElementById("mantu-manten-contact-form");
+mantumantenContactFormAlert = document.querySelector(".contact-form-alert");
 
-sueContactForm.addEventListener('submit', function(event) {
+mantumantenContactForm.addEventListener('submit', function(event) {
 event.preventDefault();
     // these IDs from the previous steps
-    emailjs.sendForm('service_hs5gf32', 'template_kkb3zjh', '#sue-contact-form')
+    emailjs.sendForm('service_hs5gf32', 'template_kkb3zjh', '#mantu-manten-contact-form')
     .then(() => {
         // console.log('SUCCESS!');
-        sueContactFormAlert.innerHTML = "<span>Your Message sent successfully!</span> <i class='ri-checkbox-circle-fill'></i>";
-        sueContactForm.reset();
+        mantumantenContactFormAlert.innerHTML = "<span>Your Message sent successfully!</span> <i class='ri-checkbox-circle-fill'></i>";
+        mantumantenContactForm.reset();
 
         setTimeout(() => {
-            sueContactFormAlert.innerHTML = "";
+            mantumantenContactFormAlert.innerHTML = "";
         }, 5000);
 
     }, (error) => {
         // console.log('FAILED...', error);
-        sueContactFormAlert.innerHTML = "<span>Message not sent</span> <i class='ri-error-warning-fill'></i>";
-        sueContactFormAlert.title = error;
+        mantumantenContactFormAlert.innerHTML = "<span>Message not sent</span> <i class='ri-error-warning-fill'></i>";
+        mantumantenContactFormAlert.title = error;
     });
 });
 
 // Shrink the height of the header on scroll
 window.addEventListener("scroll", () => {
-    const sueHeader = document.querySelector(".sue-header");
-    sueHeader.classList.toggle("shrink", window.scrollY > 0);
+    const mantumantenHeader = document.querySelector(".mantu-manten-header");
+    mantumantenHeader.classList.toggle("shrink", window.scrollY > 0);
 });
 
 // Bottom Navigation Menu
@@ -284,7 +284,7 @@ document.addEventListener("mousemove", (e) => {
 });
 
 // cursor effects on hover
-const cursorHoverlinks  = document.querySelectorAll("body a, theme-btn, .sue-main-btn, .portfolio-card, .swiper-button-prev, .swiper-button-bullet, .service-card, .contact-social-links li, .contact-form .submit-btn, .menu-show-btn, .menu-hide-btn");
+const cursorHoverlinks  = document.querySelectorAll("body a, theme-btn, .mantu-manten-main-btn, .portfolio-card, .swiper-button-prev, .swiper-button-bullet, .service-card, .contact-social-links li, .contact-form .submit-btn, .menu-show-btn, .menu-hide-btn");
 
 cursorHoverlinks.forEach((cursorHoverlink) => {
     cursorHoverlink.addEventListener("mouseover", () => {
@@ -314,13 +314,13 @@ themeBtn.addEventListener("click", () => {
     const getCurrentIcon = () => themeBtn.classList.contains("active-sun-icon") ? "sun" : "moon";
     const getCurrentTheme = () => document.body.classList.contains("light-theme") ? "light" : "dark";
 
-    localStorage.setItem("sue-saved-icon", getCurrentIcon());
-    localStorage.setItem("sue-saved-theme", getCurrentTheme());
+    localStorage.setItem("mantu-manten-saved-icon", getCurrentIcon());
+    localStorage.setItem("mantu-manten-saved-theme", getCurrentTheme());
 });
 
 // Get saved theme and icon from localStorage
-const savedIcon = localStorage.getItem("sue-saved-icon");
-const savedTheme = localStorage.getItem("sue-saved-theme");
+const savedIcon = localStorage.getItem("mantu-manten-saved-icon");
+const savedTheme = localStorage.getItem("mantu-manten-saved-theme");
 
 document.addEventListener("DOMContentLoaded", () => {
     themeBtn.classList[savedIcon === "sun" ? "add" : "remove"]("active-sun-icon");
@@ -341,8 +341,8 @@ ScrollReveal().reveal('.avatar-img', { delay: 50, origin: 'top' });
 ScrollReveal().reveal('.avatar-info, .section-title', { delay: 100, origin: 'top' });
 ScrollReveal().reveal('.home-social, .home-scroll-btn, .copy-right', { delay: 400, origin: 'bottom' });
 ScrollReveal().reveal('.about-img', { delay: 500, origin: 'top' });
-ScrollReveal().reveal('.about-info, .sue-footer .sue-logo, .spotify-btn', { delay: 100, origin: 'bottom' });
-ScrollReveal().reveal('.pro-card, .about-buttons .sue-main-btn, .portfolio-tabs .tab-btn', { delay: 300, origin: 'right', interval: 50 });
+ScrollReveal().reveal('.about-info, .mantu-manten-footer .mantu-manten-logo, .spotify-btn', { delay: 100, origin: 'bottom' });
+ScrollReveal().reveal('.pro-card, .about-buttons .mantu-manten-main-btn, .portfolio-tabs .tab-btn', { delay: 300, origin: 'right', interval: 50 });
 ScrollReveal().reveal('.service-card, .portfolio-card, .contact-item, .contact-social-links li, .footer-menu .menu-item', { delay: 100, origin: 'bottom', interval: 100 });
-ScrollReveal().reveal('.sue-client-swiper, .contact-form-body', { delay: 500, origin: 'right' });
+ScrollReveal().reveal('.mantu-manten-client-swiper, .contact-form-body', { delay: 500, origin: 'right' });
 ScrollReveal().reveal('.contact-info h3', { delay: 100, origin: 'bottom', interval: 300 });
